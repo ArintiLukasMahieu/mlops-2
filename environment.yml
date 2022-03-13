@@ -1,0 +1,10 @@
+name: mlops-course
+
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - sklearn
+  - seaborn
