@@ -5,7 +5,7 @@ import pandas as pd
 ## Model saving
 import pickle
 
-# Main function for training model on split train data and evaluating on validation data
+# Main function to use trained model to make predictions on our testing data
 def main():
     # Read preprocessed testing data
     test = pd.read_csv('data/preprocessed/test_preprocessed.csv')
