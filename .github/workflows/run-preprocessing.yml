@@ -5,10 +5,7 @@ name: run-preprocessing
 on:
   push:
     paths:
-      -'data/raw/**.csv' # Trigger on new data in /raw only
-  pull_request:
-    paths:
-      -'data/raw/**.csv' # Trigger on new data in /raw only
+      - 'data\raw\**.csv'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
