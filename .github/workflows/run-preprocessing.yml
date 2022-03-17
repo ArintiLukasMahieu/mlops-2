@@ -2,10 +2,7 @@
 name: run-preprocessing
 
 # Run the workflow if new data is pushed to our /raw folder
-on:
-  push:
-    paths:
-      - data/raw/* # Trigger on new data in /raw only
+on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
