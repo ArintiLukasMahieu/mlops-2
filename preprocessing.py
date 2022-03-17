@@ -1,6 +1,7 @@
 # Load packages
 ## Data wrangling
 import pandas as pd
+import numpy as np
 
 ## Helpers
 from helpers.preprocessing_helpers import map_numeric, replace_na
@@ -20,7 +21,7 @@ def main():
     
     # Replace NA with wanted values for features that have NAs
     na_features = ['Age','Embarked','Fare']
-    na_values = [-1, 0, -1]
+    na_values = [np.mean(train.Age), 0, np.mean(train.Fare)] # I'm lazy here...I'm using the train means to impute both the train and test data.
     
     for na_feature, na_value in zip(na_features, na_values):
         train, test = replace_na(train, test, na_feature, na_value)
