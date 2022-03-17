@@ -8,6 +8,7 @@ on:
     - 'workflow-preprocess'
     paths:
       - 'data/raw/**.csv'
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,6 +25,8 @@ jobs:
       - name: preprocess-step
         run: |
           echo "Running preprocessing pipeline"
+          pip install pandas
+          pip install numpy
           python preprocessing.py
 
   
