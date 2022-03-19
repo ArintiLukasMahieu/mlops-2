@@ -21,7 +21,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      # Run python preprecoessing script
+      # Run python preprocessing script
       # For now we can do everything within our workflow file and we won't have to write a custom 'action'.
       # On the right hand side you should see a 'Marketplace' where you can use and explore custom actions that other users have written.
       - name: preprocess-step
