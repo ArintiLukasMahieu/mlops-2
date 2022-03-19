@@ -1,5 +1,5 @@
 # This is a basic workflow- that will run a chained pipeline
-name: run-preprocessing
+name: run-pipeline
 
 # Run the workflow if new data is pushed to our /raw folder
 on:
@@ -12,7 +12,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "preprocess"
+  # This workflow contains a single job called "pipeline"
   pipeline:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
