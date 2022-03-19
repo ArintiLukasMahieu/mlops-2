@@ -41,7 +41,7 @@ git checkout main
 git branch -D new_branch_name
 ```
 
-## Next
+## Next Up
 
 When you're finished, you can see the solution in the next repository: https://github.com/LukasMahieuArinti/mlops-3
 
